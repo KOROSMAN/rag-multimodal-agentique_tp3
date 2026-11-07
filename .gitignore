@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Données générées (on peut les recréer en relançant le code)
+resultats_pdf/
+chroma_db/
+
+# Secrets
+.env
