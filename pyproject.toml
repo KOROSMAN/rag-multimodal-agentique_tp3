@@ -3,6 +3,7 @@ name = "rag-multimodal-agentique-tp3"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "chromadb>=1.5.9",
     "ipykernel>=7.4.0",
     "open-clip-torch>=4.2.1",
     "pandas>=3.1.1",
