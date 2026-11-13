@@ -2,7 +2,7 @@
 - [x] Étape 0 : Initialisation du projet
 - [x] Étape 1 : Extraction du contenu multimodal (texte & images)
 - [x] Étape 2 : Embeddings CLIP dans un espace latent commun
-- [ ] Étape 3 : Indexation dans ChromaDB
+- [X] Étape 3 : Indexation dans ChromaDB
 - [ ] Étape 4 : Recherche multimodale par similarité cosinus
 - [ ] Étape 5 : Retriever transformé en outil agentique
 - [ ] Étape 6 : Agent ReAct avec LangGraph
