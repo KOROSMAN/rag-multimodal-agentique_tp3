@@ -226,3 +226,5 @@ chroma_db/
 
 # Secrets
 .env
+# Réglages locaux Claude Code
+.claude/settings.local.json
