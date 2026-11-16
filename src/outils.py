@@ -51,7 +51,8 @@ def retriever_tool(
             scaling factor sqrt d_k".
         type_resultat: "texte" pour des passages explicatifs, "image" pour des figures ou
             schémas, "tous" (par défaut) pour des passages ET les figures les plus proches.
-        k: nombre de passages texte à récupérer (entre 1 et 10, 5 par défaut).
+        k: nombre de passages texte à récupérer (entre 1 et 10). Garde 5 par défaut :
+            moins de 3 passages donne souvent un contexte insuffisant.
     """
     k = max(1, min(int(k), 10))
 
