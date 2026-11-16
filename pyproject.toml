@@ -5,9 +5,15 @@ requires-python = ">=3.12"
 dependencies = [
     "chromadb>=1.5.9",
     "ipykernel>=7.4.0",
+    "langchain-core>=1.8.0",
     "open-clip-torch>=4.2.1",
     "pandas>=3.1.1",
     "pillow>=13.0.0",
     "pymupdf>=2.1",
     "torch>=2.15.0",
+]
+
+[dependency-groups]
+dev = [
+    "nbconvert>=7.17.2",
 ]

@@ -45,3 +45,14 @@ def rechercher(texte=None, image=None, type_resultat=None, k=5):
             resultats["metadatas"][0], resultats["distances"][0],
         )
     ]
+
+def rechercher_hybride(texte, k_texte=4, k_image=2):
+    """
+    Une recherche par modalité, puis on fusionne.
+
+    Pourquoi : à cause du "modality gap" de CLIP, les similarités texte↔texte
+    (~0.6-0.8) écrasent les similarités texte↔image (~0.2-0.3). Dans un classement
+    unique, les images ne sortiraient jamais. On réserve donc k_image places aux figures.
+    """
+    return (rechercher(texte=texte, type_resultat="texte", k=k_texte)
+            + rechercher(texte=texte, type_resultat="image", k=k_image))
