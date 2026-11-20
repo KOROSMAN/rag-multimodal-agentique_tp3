@@ -6,7 +6,7 @@
 - [x] Étape 4 : Recherche multimodale par similarité cosinus
 - [x] Étape 5 : Retriever transformé en outil agentique
 - [x] Étape 6 : Agent ReAct avec LangGraph
-- [ ] Étape 7 : Tests et validation
+- [X] Étape 7 : Tests et validation
 
 
 ## Structure
